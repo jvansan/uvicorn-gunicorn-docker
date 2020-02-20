@@ -9,7 +9,12 @@
 
 ## Parent Repository
 
-This repository is based on [tiangolo/uvicorn-gunicorn-docker] but modified to use [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
+This repository is based on [tiangolo/uvicorn-gunicorn-docker](https://github.com/tiangolo/uvicorn-gunicorn-docker) but modified to use [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
+
+#### TODO:
+
+- Scripts and tests need to be updated for appropriate tags and username.
+
 
 Details below are directly from the parent repo:
 
