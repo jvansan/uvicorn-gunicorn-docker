@@ -1,8 +1,12 @@
-FROM python:3.7
+FROM continuumio/miniconda3
 
-LABEL maintainer="Sebastian Ramirez <tiangolo@gmail.com>"
+LABEL maintainer="jvansan <jeffreyavansanten@gmail.com>"
 
-RUN pip install uvicorn gunicorn
+ENV PYTHONVENV=app
+
+RUN conda update -n base conda
+RUN conda create -n $PYTHONVENV python=3.7
+RUN conda install -n $PYTHONVENV -c conda-forge uvicorn gunicorn
 
 COPY ./start.sh /start.sh
 RUN chmod +x /start.sh

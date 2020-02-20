@@ -1,4 +1,4 @@
-#! /usr/bin/env sh
+#! /usr/bin/env bash
 set -e
 
 if [ -f /app/app/main.py ]; then
@@ -30,4 +30,5 @@ else
 fi
 
 # Start Gunicorn
+source activate $PYTHONVENV
 exec gunicorn -k uvicorn.workers.UvicornWorker -c "$GUNICORN_CONF" "$APP_MODULE"

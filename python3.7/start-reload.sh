@@ -1,4 +1,4 @@
-#! /usr/bin/env sh
+#! /usr/bin/env bash
 set -e
 
 if [ -f /app/app/main.py ]; then
@@ -25,4 +25,5 @@ else
 fi
 
 # Start Uvicorn with live reload
+source activate $PYTHONVENV
 exec uvicorn --reload --host $HOST --port $PORT --log-level $LOG_LEVEL "$APP_MODULE"
