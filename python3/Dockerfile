@@ -2,10 +2,11 @@ FROM continuumio/miniconda3
 
 LABEL maintainer="jvansan <jeffreyavansanten@gmail.com>"
 
-ENV PYTHONVENV=app
+ARG PYTHONVENV=app
+ARG PYTHONVERSION=3.9
 
 RUN conda update -n base conda
-RUN conda create -n $PYTHONVENV python=3.6
+RUN conda create -n $PYTHONVENV python=$PYTHONVERSION
 RUN conda install -n $PYTHONVENV -c conda-forge uvicorn gunicorn
 
 COPY ./start.sh /start.sh

@@ -1,9 +1,11 @@
-> [![Build Status](https://travis-ci.org/tiangolo/uvicorn-gunicorn-docker.svg?branch=master)](https://travis-ci.org/tiangolo/uvicorn-gunicorn-docker)
-
 ## Supported tags and respective `Dockerfile` links
 
-* [`python3.7`, `latest` _(Dockerfile)_](https://github.com/jvansan/miniconda-uvicorn-gunicorn-docker/blob/master/python3.7/Dockerfile)
-* [`python3.6` _(Dockerfile)_](https://github.com/jvansan/miniconda-uvicorn-gunicorn-docker/blob/master/python3.6/Dockerfile)
+[_(Dockerfile)_](https://github.com/jvansan/miniconda-uvicorn-gunicorn-docker/blob/master/python3/Dockerfile)
+
+* python3.9 = `3.9`
+* python3.8 = `3.8`
+* python3.7 = `3.7`
+* python3.6 = `3.6`
 
 **Docker Hub image**: [https://hub.docker.com/r/jvansan/uvicorn-gunicorn/](https://hub.docker.com/r/jvansan/uvicorn-gunicorn/)
 
